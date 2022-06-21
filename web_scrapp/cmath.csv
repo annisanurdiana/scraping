@@ -1,0 +1,31 @@
+,Function Name,Function Usage
+0,cmath.phase,"Return the phase of x (also known as the argument of x), as a float.  phase(x) is equivalent to math.atan2(x.imag, x.real).  The result lies in the range [-π, π], and the branch cut for this operation lies along the negative real axis, continuous from above.  On systems with support for signed zeros (which includes most systems in current use), this means that the sign of the result is the same as the sign of x.imag, even when x.imag is zero: >>> phase(complex(-1.0, 0.0)) 3.141592653589793 >>> phase(complex(-1.0, -0.0)) -3.141592653589793   "
+1,cmath.polar,"Return the representation of x in polar coordinates.  Returns a pair (r, phi) where r is the modulus of x and phi is the phase of x.  polar(x) is equivalent to (abs(x), phase(x)). "
+2,cmath.rect,Return the complex number x with polar coordinates r and phi. Equivalent to r * (math.cos(phi) + math.sin(phi)*1j). 
+3,cmath.exp,"Return e raised to the power x, where e is the base of natural logarithms. "
+4,cmath.log,"Returns the logarithm of x to the given base. If the base is not specified, returns the natural logarithm of x. There is one branch cut, from 0 along the negative real axis to -∞, continuous from above. "
+5,cmath.log10,Return the base-10 logarithm of x. This has the same branch cut as log(). 
+6,cmath.sqrt,Return the square root of x. This has the same branch cut as log(). 
+7,cmath.acos,"Return the arc cosine of x. There are two branch cuts: One extends right from 1 along the real axis to ∞, continuous from below. The other extends left from -1 along the real axis to -∞, continuous from above. "
+8,cmath.asin,Return the arc sine of x. This has the same branch cuts as acos(). 
+9,cmath.atan,"Return the arc tangent of x. There are two branch cuts: One extends from 1j along the imaginary axis to ∞j, continuous from the right. The other extends from -1j along the imaginary axis to -∞j, continuous from the left. "
+10,cmath.cos,Return the cosine of x. 
+11,cmath.sin,Return the sine of x. 
+12,cmath.tan,Return the tangent of x. 
+13,cmath.acosh,"Return the inverse hyperbolic cosine of x. There is one branch cut, extending left from 1 along the real axis to -∞, continuous from above. "
+14,cmath.asinh,"Return the inverse hyperbolic sine of x. There are two branch cuts: One extends from 1j along the imaginary axis to ∞j, continuous from the right.  The other extends from -1j along the imaginary axis to -∞j, continuous from the left. "
+15,cmath.atanh,"Return the inverse hyperbolic tangent of x. There are two branch cuts: One extends from 1 along the real axis to ∞, continuous from below. The other extends from -1 along the real axis to -∞, continuous from above. "
+16,cmath.cosh,Return the hyperbolic cosine of x. 
+17,cmath.sinh,Return the hyperbolic sine of x. 
+18,cmath.tanh,Return the hyperbolic tangent of x. 
+19,cmath.isfinite,"Return True if both the real and imaginary parts of x are finite, and False otherwise.  New in version 3.2.  "
+20,cmath.isinf,"Return True if either the real or the imaginary part of x is an infinity, and False otherwise. "
+21,cmath.isnan,"Return True if either the real or the imaginary part of x is a NaN, and False otherwise. "
+22,cmath.isclose,"Return True if the values a and b are close to each other and False otherwise. Whether or not two values are considered close is determined according to given absolute and relative tolerances. rel_tol is the relative tolerance – it is the maximum allowed difference between a and b, relative to the larger absolute value of a or b. For example, to set a tolerance of 5%, pass rel_tol=0.05.  The default tolerance is 1e-09, which assures that the two values are the same within about 9 decimal digits.  rel_tol must be greater than zero. abs_tol is the minimum absolute tolerance – useful for comparisons near zero. abs_tol must be at least zero. If no errors occur, the result will be: abs(a-b) <= max(rel_tol * max(abs(a), abs(b)), abs_tol). The IEEE 754 special values of NaN, inf, and -inf will be handled according to IEEE rules.  Specifically, NaN is not considered close to any other value, including NaN.  inf and -inf are only considered close to themselves.  New in version 3.5.   See also PEP 485 – A function for testing approximate equality  "
+23,cmath.pi,"The mathematical constant π, as a float. "
+24,cmath.e,"The mathematical constant e, as a float. "
+25,cmath.tau,"The mathematical constant τ, as a float.  New in version 3.6.  "
+26,cmath.inf,Floating-point positive infinity. Equivalent to float('inf').  New in version 3.6.  
+27,cmath.infj,"Complex number with zero real part and positive infinity imaginary part. Equivalent to complex(0.0, float('inf')).  New in version 3.6.  "
+28,cmath.nan,A floating-point “not a number” (NaN) value.  Equivalent to float('nan').  New in version 3.6.  
+29,cmath.nanj,"Complex number with zero real part and NaN imaginary part. Equivalent to complex(0.0, float('nan')).  New in version 3.6.  "
